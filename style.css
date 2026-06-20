@@ -1,0 +1,168 @@
+/* ==========================================================================
+   Variables de Color Personalizadas
+   ========================================================================== */
+:root {
+  --primario: #1e40af;       /* Azul fuerte educativo */
+  --primario-hover: #1d4ed8; /* Azul más claro para efectos hover */
+  --secundario: #0f172a;     /* Gris oscuro/azul para textos y secciones oscuras */
+  --detalles: #f59e0b;       /* Amarillo/Ámbar para botones de acción y destaques */
+  --fondo-ligero: #f8fafc;   /* Blanco grisáceo para fondos limpios */
+}
+
+/* ==========================================================================
+   Estilos Generales y Utilidades
+   ========================================================================== */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--fondo-ligero);
+  color: #334155;
+}
+
+.max-width-700 {
+  max-width: 700px;
+}
+
+.max-width-600 {
+  max-width: 600px;
+}
+
+/* ==========================================================================
+   Navegación (Navbar)
+   ========================================================================== */
+.bg-primario-personalizado {
+  background-color: var(--primario) !important;
+}
+
+.navbar .nav-link {
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: var(--detalles) !important;
+}
+
+/* ==========================================================================
+   Sección Hero (Inicio y Pantalla de Login)
+   ========================================================================== */
+.hero {
+  background: linear-gradient(135deg, var(--primario) 0%, #111827 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Círculos decorativos sutiles de fondo en el Hero */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: -20%;
+  left: -10%;
+  width: 400px;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* ==========================================================================
+   Tarjetas de Temas (Sección Videos)
+   ========================================================================== */
+.card-tema {
+  border: none;
+  border-radius: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #ffffff;
+}
+
+.card-tema:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1) !important;
+}
+
+.text-primario-personalizado {
+  color: var(--primario);
+}
+
+.ejercicio-box {
+  background-color: var(--fondo-ligero);
+  border-left: 4px solid var(--primario);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+/* Ajustes para los iframes de YouTube */
+.ratio iframe {
+  border: none;
+}
+
+/* ==========================================================================
+   Botones Personalizados
+   ========================================================================== */
+.btn-principal {
+  background-color: var(--primario);
+  color: #ffffff;
+  border: none;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-principal:hover {
+  background-color: var(--primario-hover);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.btn-principal:active {
+  transform: translateY(1px);
+}
+
+/* ==========================================================================
+   Zona de Login, Registro y Formularios
+   ========================================================================== */
+.card {
+  border-radius: 1rem;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: var(--primario);
+  box-shadow: 0 0 0 0.25rem rgba(30, 64, 175, 0.25);
+}
+
+.input-group-text {
+  background-color: #e2e8f0;
+  color: #64748b;
+  border: 1px solid #ced4da;
+}
+
+/* Centrado e integración para los iconos integrados en inputs */
+.input-group-text i {
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Pestañas de Intercambio (Tabs de Bootstrap) para Login / Registro */
+.nav-pills .nav-link {
+  color: #64748b;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.nav-pills .nav-link.active {
+  background-color: var(--primario) !important;
+  color: #ffffff !important;
+}
+
+.nav-pills .nav-link:hover:not(.active) {
+  background-color: #f1f5f9;
+  color: var(--primario);
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+footer {
+  background-color: var(--secundario) !important;
+  border-top: 3px solid var(--detalles);
+}
