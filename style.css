@@ -1,17 +1,11 @@
-/* ==========================================================================
-   Variables de Color Personalizadas
-   ========================================================================== */
 :root {
-  --primario: #1e40af;       /* Azul fuerte educativo */
-  --primario-hover: #1d4ed8; /* Azul más claro para efectos hover */
-  --secundario: #0f172a;     /* Gris oscuro/azul para textos y secciones oscuras */
-  --detalles: #f59e0b;       /* Amarillo/Ámbar para botones de acción y destaques */
-  --fondo-ligero: #f8fafc;   /* Blanco grisáceo para fondos limpios */
+  --primario: #1e40af;       
+  --primario-hover: #1d4ed8; 
+  --secundario: #0f172a;     
+  --detalles: #f59e0b;       
+  --fondo-ligero: #f8fafc;   
 }
 
-/* ==========================================================================
-   Estilos Generales y Utilidades
-   ========================================================================== */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: var(--fondo-ligero);
@@ -26,9 +20,6 @@ body {
   max-width: 600px;
 }
 
-/* ==========================================================================
-   Navegación (Navbar)
-   ========================================================================== */
 .bg-primario-personalizado {
   background-color: var(--primario) !important;
 }
@@ -41,16 +32,14 @@ body {
   color: var(--detalles) !important;
 }
 
-/* ==========================================================================
-   Sección Hero (Inicio y Pantalla de Login)
-   ========================================================================== */
+
 .hero {
   background: linear-gradient(135deg, var(--primario) 0%, #111827 100%);
   position: relative;
   overflow: hidden;
 }
 
-/* Círculos decorativos sutiles de fondo en el Hero */
+
 .hero::before {
   content: "";
   position: absolute;
@@ -63,9 +52,7 @@ body {
   pointer-events: none;
 }
 
-/* ==========================================================================
-   Tarjetas de Temas (Sección Videos)
-   ========================================================================== */
+
 .card-tema {
   border: none;
   border-radius: 1rem;
@@ -90,14 +77,11 @@ body {
   margin-top: 1.5rem;
 }
 
-/* Ajustes para los iframes de YouTube */
+
 .ratio iframe {
   border: none;
 }
 
-/* ==========================================================================
-   Botones Personalizados
-   ========================================================================== */
 .btn-principal {
   background-color: var(--primario);
   color: #ffffff;
@@ -117,9 +101,7 @@ body {
   transform: translateY(1px);
 }
 
-/* ==========================================================================
-   Zona de Login, Registro y Formularios
-   ========================================================================== */
+
 .card {
   border-radius: 1rem;
 }
@@ -135,14 +117,14 @@ body {
   border: 1px solid #ced4da;
 }
 
-/* Centrado e integración para los iconos integrados en inputs */
+
 .input-group-text i {
   font-size: 1.1rem;
   display: flex;
   align-items: center;
 }
 
-/* Pestañas de Intercambio (Tabs de Bootstrap) para Login / Registro */
+
 .nav-pills .nav-link {
   color: #64748b;
   border-radius: 0.5rem;
@@ -159,9 +141,7 @@ body {
   color: var(--primario);
 }
 
-/* ==========================================================================
-   Footer
-   ========================================================================== */
+
 footer {
   background-color: var(--secundario) !important;
   border-top: 3px solid var(--detalles);
