@@ -1,4 +1,4 @@
-ocument.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
   
   const pantallaLogin = document.getElementById("pantalla-login");
   const contenidoPlataforma = document.getElementById("contenido-plataforma");
